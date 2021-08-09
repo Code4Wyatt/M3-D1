@@ -109,8 +109,9 @@ Create a function to display the city name if the string begins with "Los" or "N
 const displayCity = function(str) {
     if (str.length >= 3 && ((str.substring(0, 3 ) == "Los") || (str.substring(0, 3) == "New"))) {
         return str;
-    }
+    } else {
     return '';
+    }
 }
 
 console.log(displayCity("Los Angeles"))
