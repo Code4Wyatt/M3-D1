@@ -120,6 +120,13 @@ console.log(displayCity("Los Angeles"))
 Create a function to calculate the sum of three elements of a given array of integers of length 3.
 */
 
+const myArray = [4, 2, 8]
+
+const mySum = myArray.reduce(function(a,b){
+    return a + b;
+}, 0);
+
+console.log(mySum)
 /*
 
 9)
