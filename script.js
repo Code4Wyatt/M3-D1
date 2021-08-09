@@ -15,29 +15,63 @@ const sum = function(a,b) {
 
 console.log(sum(3,3))
 
-
-
-
 /*
 2)
 Create a function to check two given numbers and return true if one of the number is 50 or if their sum is 50.
 */
 
+const twoNums = function (a,b) {
+    if (a = 50, b = 50) {
+        return true
+    } else if (a + b === 50) {
+        return true
+    } else {
+        return false
+    }
+}
+
+console.log(twoNums(50, 24))
 /*
 3)
 Create a function to remove a character at the specified position of a given string and return the new string.
 */
 
-/*
+function removeLastLetter {
+    let str = "Strivers"
+    str.substring(0, str.length-1)
+    console.log(str)
+}
 
+removeLastLetter()
+
+/*
 4)
  Create a function to find the largest of three given integers.
 */
+
+const largestNum = function (a,b,c) {
+    max-num = 0;
+    if (x > y) {
+        max-num = x;
+    } else {
+        max-num = y;
+    } 
+    if (max-num < c) {
+        max-num = c;
+    }
+    return max-num;
+ }
+
+ console.log(largestNum(1999, 480, 290))
 
 /*
 5)
 Create a function to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
 */
+
+const inRange = function(a,b) {
+    
+}
 
 /*
 6) 
