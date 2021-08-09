@@ -36,10 +36,10 @@ console.log(twoNums(50, 24))
 Create a function to remove a character at the specified position of a given string and return the new string.
 */
 
-function removeLastLetter {
-    let str = "Strivers"
-    str.substring(0, str.length-1)
-    console.log(str)
+function removeLastLetter() {
+    let str = "Strivers";
+    str = str.substring(0, str.length-1);
+    console.log(str);
 }
 
 removeLastLetter()
@@ -50,16 +50,16 @@ removeLastLetter()
 */
 
 const largestNum = function (a,b,c) {
-    max-num = 0;
-    if (x > y) {
-        max-num = x;
+   max_num = 0;
+    if (a > b) {
+        max_num = a;
     } else {
-        max-num = y;
+        max_num = b;
     } 
-    if (max-num < c) {
-        max-num = c;
+    if (max_num < c) {
+        max_num = c;
     }
-    return max-num;
+    return max_num;
  }
 
  console.log(largestNum(1999, 480, 290))
@@ -70,9 +70,20 @@ Create a function to check whether two numbers are in range 40..60 or in the ran
 */
 
 const inRange = function(a,b) {
+    if (a < 40 && a > 60 || a < 70 && a > 100) {
+        return false
+    } else if (b < 40 && b > 60 || b < 70 && b > 100) {
+        return false
+    } else if (a > 40 && a < 60 || b > 70 && b < 100) {
+        return true
+    } else if (b > 40 && b < 60 || b > 70 && b < 100) {
+        return true
+    }
     
 }
 
+
+console.log(inRange(70, 50))
 /*
 6) 
 
