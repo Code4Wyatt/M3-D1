@@ -88,7 +88,17 @@ console.log(inRange(70, 50))
 6) 
 
 Create a function to create a new string of specified copies (positive number) of a given string.
-*/
+*/ 
+
+const stringCopies = function(str, n) {
+    if (n < 0) {
+        return false;
+    } else {
+        return str.repeat(n);
+    }
+}
+
+console.log(stringCopies("Trololol", 4))
 
 /*
 
@@ -96,6 +106,14 @@ Create a function to create a new string of specified copies (positive number) o
 Create a function to display the city name if the string begins with "Los" or "New" otherwise return blank.
 */
 
+const displayCity = function(str) {
+    if (str.length >= 3 && ((str.substring(0, 3 ) == "Los") || (str.substring(0, 3) == "New"))) {
+        return str;
+    }
+    return '';
+}
+
+console.log(displayCity("Los Angeles"))
 /*
 8)
 Create a function to calculate the sum of three elements of a given array of integers of length 3.
